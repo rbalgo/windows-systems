@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plasterManifest
+  schemaVersion="1.2"
+  templateType="Project" xmlns="http://www.microsoft.com/schemas/PowerShell/Plaster/v1">
+  <metadata>
+    <name>FullModuleTemplate</name>
+    <id>7d50f92b-f314-4d28-83a6-4cc6937155b6</id>
+    <version>0.0.1</version>
+    <title>Full Module Template</title>
+    <description></description>
+    <author>Raj Balgobin</author>
+    <tags></tags>
+  </metadata>
+  <parameters>
+    <parameter name="ModuleName" type="text" prompt="Name of your module" default="${PLASTER_DestinationName}"/>
+    <parameter name="ModuleDesc" type="text" prompt="Brief description on this module" default="${PLASTER_ModuleName}"/>
+    <parameter name="TemplateAuthor" type="text" prompt="Author Name"/>
+    <parameter name="Version" type="text" prompt="Initial module version" default="0.0.1" />
+  </parameters>
+  <content>
+    <message>      Creating folder structure    </message>
+    <file source='' destination='docs'/>
+    <file source='' destination='tests'/>
+    <file source='' destination='.vscode'/>
+    <file source='' destination='${PLASTER_PARAM_ModuleName}\public'/>
+    <file source='' destination='${PLASTER_PARAM_ModuleName}\private'/>
+    <file source='' destination='${PLASTER_PARAM_ModuleName}\classes'/>
+    <file source='' destination='tests\public'/>
+    <file source='' destination='tests\private'/>
+    <message>      Deploying files    </message>
+    <file source='.gitignore' destination=''/>
+	  <file source='.vscode\PSScriptAnalyzerSettings.psd1' destination=''/>
+    <file source='.vscode\settings.json' destination=''/>
+    <templateFile source='module\public\Disable-SSLValidation.ps1' destination='${PLASTER_PARAM_ModuleName}\public\Disable-SSLValidation.ps1'/>
+    <templateFile source='module\private\Disable-SSLValidation.ps1' destination='${PLASTER_PARAM_ModuleName}\private\Disable-SSLValidation.ps1'/>
+    <templateFile source='readme.md' destination=''/>
+    <templateFile source='LICENSE' destination=''/>
+    <templateFile source='docs\about.md' destination=''/>
+    <templateFile source='tests\RunPSScriptAnalyzer.ps1' destination=''/>
+    <templateFile source='tests\Feature.Tests.ps1' destination=''/>
+    <templateFile source='tests\Unit.Tests.ps1' destination=''/>
+    <templateFile source='tests\public\Disable-SSLValidation.Tests.ps1' destination=''/>
+    <templateFile source='tests\private\Disable-SSLValidation.Tests.ps1' destination=''/>
+    <file source='module\module.psm1' destination='${PLASTER_PARAM_ModuleName}\${PLASTER_PARAM_ModuleName}.psm1'/>
+    <templateFile source='module\module.psd1' destination='${PLASTER_PARAM_ModuleName}\${PLASTER_PARAM_ModuleName}.psd1'/>
+  </content>
+</plasterManifest>
