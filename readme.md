@@ -1,5 +1,5 @@
 ## Description
 
-A central place to protect my future self and documenting my learning journey.
+A central place to protect my future self and documenting my learning journey along the way.
 
-Repo contains all my ramblings and hack scripts, tools relating to automate windows based systems.
+Repo contains all my ramblings, hack scripts and tools relating to automating windows based systems.
