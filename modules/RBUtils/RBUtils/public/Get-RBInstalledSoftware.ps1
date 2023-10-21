@@ -29,6 +29,10 @@ function Get-RBInstalledSoftware {
         [Parameter()]
         [guid]$Guid
     )
+    # FIXME: This script block has code voilations.
+    # BUG : # Bug Comment
+    # FUTURE : # MR change for the future
+    # SUGGESTION : # Suggestions
     process {
         try {
             $scriptBlock = {
@@ -67,8 +71,8 @@ function Get-RBInstalledSoftware {
                                 foreach ($ValName in $SwKey.GetValueNames()) {
                                     if ($ValName -ne 'Version') {
                                         $output.InstallLocation = ''
-                                        if ($ValName -eq 'InstallLocation' -and 
-                                            ($SwKey.GetValue($ValName)) -and 
+                                        if ($ValName -eq 'InstallLocation' -and
+                                            ($SwKey.GetValue($ValName)) -and
                                             (@('C:', 'C:\Windows', 'C:\Windows\System32', 'C:\Windows\SysWOW64') -notcontains $SwKey.GetValue($ValName).TrimEnd('\'))) {
                                             $output.InstallLocation = $SwKey.GetValue($ValName).TrimEnd('\')
                                         }

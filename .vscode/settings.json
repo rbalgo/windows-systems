@@ -2,8 +2,10 @@
   // editor
   "editor.quickSuggestionsDelay": 1,
   "editor.tabCompletion": "on",
+  "editor.rulers": [ 115 ],
   "files.defaultLanguage": "powershell",
   "files.autoSave": "onWindowChange",
+
 
   // powershell settings changes
 
@@ -15,7 +17,7 @@
   },
     "powershell.integratedConsole.focusConsoleOnExecute": false,
     "powershell.integratedConsole.showOnStartup": true,
-    "powershell.powerShellDefaultVersion": "PS7",
+    "powershell.powerShellDefaultVersion": "PS5.1",
     "powershell.codeFormatting.preset":"Stroustrup",
     "powershell.startAutomatically": true,
     "powershell.scriptAnalysis.enable": true,
@@ -25,6 +27,39 @@
       "files.trimTrailingWhitespace": true,
       "files.encoding": "utf8bom",
       "files.autoGuessEncoding": true,
-      "editor.tabCompletion": "on"
+    },
+
+  // TO DO Tree Extension Configuration
+  "todo-tree.general.tags": [
+    "BUG",
+    "FUTURE",
+    "SUGGESTION",
+  ],
+  "todo-tree.tree.autoRefresh": true,
+  "todo-tree.highlights.customHighlight": {
+    "BUG": {
+      "icon": "bug",
+      "foreground": "#000000",
+      "background": "#FF0000",
+      "iconColour": "#FF0000",
+      "type": "line",
+      "gutterIcon": true
+    },
+    "FUTURE": {
+      "icon": "paper-airplane",
+      "foreground": "#000000",
+      "background": "#30D5C8",
+      "iconColour": "#30D5C8",
+      "type": "line",
+      "gutterIcon": true
+    },
+    "SUGGESTION": {
+      "icon": "light-bulb",
+      "foreground": "#000000",
+      "background": "#FFA500",
+      "iconColour": "#FFA500",
+      "type": "line",
+      "gutterIcon": true
     }
+  }
 }
