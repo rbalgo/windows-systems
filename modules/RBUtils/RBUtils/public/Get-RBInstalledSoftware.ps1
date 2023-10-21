@@ -42,6 +42,8 @@ function Get-RBInstalledSoftware {
                     "HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall",
                     "HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall"
                 )
+                Write-host "asdfasdhasdfhasdf `
+                asdfasdf"
                 New-PSDrive -Name HKU -PSProvider Registry -Root Registry::HKEY_USERS | Out-Null
                 $UninstallKeys += Get-ChildItem HKU: | where { $_.Name -match 'S-\d-\d+-(\d+-){1,14}\d+$' } | foreach {
                     "HKU:\$($_.PSChildName)\Software\Microsoft\Windows\CurrentVersion\Uninstall"

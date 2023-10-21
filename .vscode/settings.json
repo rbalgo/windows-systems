@@ -2,10 +2,11 @@
   // editor
   "editor.quickSuggestionsDelay": 1,
   "editor.tabCompletion": "on",
-  "editor.rulers": [ 115 ],
+  "editor.rulers": [115],
+  "editor.formatOnSave": false,
+  "editor.formatOnType": true,
   "files.defaultLanguage": "powershell",
   "files.autoSave": "onWindowChange",
-
 
   // powershell settings changes
 
@@ -15,18 +16,19 @@
     "PS7": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
     "PS5.1": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
   },
-    "powershell.integratedConsole.focusConsoleOnExecute": false,
-    "powershell.integratedConsole.showOnStartup": true,
-    "powershell.powerShellDefaultVersion": "PS5.1",
-    "powershell.codeFormatting.preset":"Stroustrup",
-    "powershell.startAutomatically": true,
-    "[powershell]": {
-      "editor.renderWhitespace": "all",
-      "editor.renderControlCharacters": true,
-      "files.trimTrailingWhitespace": true,
-      "files.encoding": "utf8bom",
-      "files.autoGuessEncoding": true,
-    },
+  "powershell.integratedConsole.focusConsoleOnExecute": false,
+  "powershell.integratedConsole.showOnStartup": true,
+  "powershell.powerShellDefaultVersion": "PS5.1",
+  "powershell.codeFormatting.preset": "Stroustrup",
+  "powershell.codeFormatting.openBraceOnSameLine": true,
+  "powershell.startAutomatically": true,
+  "[powershell]": {
+    "editor.renderWhitespace": "all",
+    "editor.renderControlCharacters": true,
+    "files.trimTrailingWhitespace": true,
+    "files.encoding": "utf8bom",
+    "files.autoGuessEncoding": true,
+  },
 
   // TO DO Tree Extension Configuration
   "todo-tree.general.tags": [
@@ -61,7 +63,6 @@
       "gutterIcon": true
     }
   },
-
   // PSScriptAnalyzer Settings
   "powershell.scriptAnalysis.settingsPath": ".vscode\\PSScriptAnalyzerSettings.psd1",
   "powershell.scriptAnalysis.enable": true,
