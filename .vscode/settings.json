@@ -20,7 +20,6 @@
     "powershell.powerShellDefaultVersion": "PS5.1",
     "powershell.codeFormatting.preset":"Stroustrup",
     "powershell.startAutomatically": true,
-    "powershell.scriptAnalysis.enable": true,
     "[powershell]": {
       "editor.renderWhitespace": "all",
       "editor.renderControlCharacters": true,
@@ -61,5 +60,9 @@
       "type": "line",
       "gutterIcon": true
     }
-  }
+  },
+
+  // PSScriptAnalyzer Settings
+  "powershell.scriptAnalysis.settingsPath": ".vscode\\PSScriptAnalyzerSettings.psd1",
+  "powershell.scriptAnalysis.enable": true,
 }
