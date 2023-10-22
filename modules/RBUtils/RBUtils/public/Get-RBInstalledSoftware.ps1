@@ -31,8 +31,12 @@ function Get-RBInstalledSoftware {
     )
     # FIXME: This script block has code voilations.
     # BUG : # Bug Comment
-    # FUTURE : # MR change for the future
-    # SUGGESTION : # Suggestions
+    # MR-FUTURE : # MR change for the future
+    # MR-SUGGESTION : # Suggestions
+
+    # XBUG : # Bug Fixed - requires re-review
+    # XMR-FUTURE : # MR addressed - requires re-review
+    # XMR-SUGGESTION : # MR addressed - requires re-review
     process {
         try {
             $scriptBlock = {
