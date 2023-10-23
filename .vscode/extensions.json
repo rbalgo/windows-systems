@@ -8,5 +8,8 @@
     "oderwat.indent-rainbow",
     "Gruntfuggly.todo-tree",
     "usernamehw.errorlens",
+    "ms-vscode-remote.remote-ssh",
+    "streetsidesoftware.code-spell-checker",
+    "chouzz.vscode-better-align"
   ]
 }

@@ -113,4 +113,5 @@
     "rgba(79,236,236,0.3)"
   ],
   "indentRainbow.colorOnWhiteSpaceOnly": true,
+  "files.trimTrailingWhitespace": true,
 }
